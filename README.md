@@ -9,26 +9,8 @@ original
 [ethresear.ch post](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413)
 for a high-level view.
 
-<!--
-TODO:
-## Local development and testing
-
-### Requirements
-
-### Local development
-
-### Testing
-
-## Deployment
-
--->
-
-
-<!--
-# MACI
-Minimal Anti-Collusion Infrastructure
-
-This project is based upon https://ethresear.ch/t/minimal-anti-collusion-infrastructure
+We welcome contributions to this project. Please join our
+[Telegram group](https://t.me/joinchat/LUgOpE7J2gstRcZqdERyvw) to discuss.
 
 # Developing on MACI
 

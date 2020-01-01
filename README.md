@@ -1,3 +1,30 @@
+# Minimum Anti-Collusion Infrastructure
+
+This is a monorepo for MACI, which provides the base layer for voting systems,
+quadratic funding, and other applications which require collusion resistance.
+
+Please refer to the [implementation
+spec](./SPEC.md) for technical details, and the
+original 
+[ethresear.ch post](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413)
+for a high-level view.
+
+<!--
+TODO:
+## Local development and testing
+
+### Requirements
+
+### Local development
+
+### Testing
+
+## Deployment
+
+-->
+
+
+<!--
 # MACI
 Minimal Anti-Collusion Infrastructure
 
@@ -57,3 +84,4 @@ yarn test
 We are actively seeking help on implementing this project please join https://t.me/joinchat/LUgOpE7J2gstRcZqdERyvw and ask about contributions
 
 And check the help wanted issues.
+-->

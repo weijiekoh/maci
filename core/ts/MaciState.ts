@@ -628,7 +628,7 @@ class MaciState {
 
         // For each batch, create a tree of the leaves in the batch, and insert the
         // tree root into the intermediate tree
-        for (let i = bigInt(0); i < bigInt(2).pow(this.stateTreeDepth); i += _batchSize) {
+        for (let i = bigInt(0); i < bigInt(5).pow(this.stateTreeDepth); i += _batchSize) {
 
             // Use this batchTree to accumulate the leaves in the batch
             const batchTree = emptyBatchTree.copy()

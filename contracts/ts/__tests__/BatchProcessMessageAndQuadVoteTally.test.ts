@@ -116,7 +116,7 @@ describe('BatchProcessMessage', () => {
     })
 
     describe('Sign-ups', () => {
-        it('The state root should be correct after signing up four users', async () => {
+        it('The state root should be correct after signing up some users', async () => {
             // Sign the users up
             for (const user of users) {
                 maciState.signUp(

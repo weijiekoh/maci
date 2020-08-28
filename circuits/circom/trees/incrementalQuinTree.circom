@@ -232,14 +232,14 @@ template QuinGeneratePathIndices(levels) {
         // we know what we are doing. But this is the only way to perform the
         // modulo operation.
 
-        n[i] = m;
+        n[i] <-- m;
         
         out[i] <-- m % BASE;
 
         m = m \ BASE;
     }
 
-    n[levels] = m;
+    n[levels] <-- m;
 
     // Do a range check on each out[i]
     for (var i = 1; i < levels + 1; i ++) {

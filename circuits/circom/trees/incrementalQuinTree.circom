@@ -247,7 +247,7 @@ template QuinGeneratePathIndices(levels) {
     }
     
     component leq[levels];
-    var sum = 0;
+    component sum = CalculateTotal(levels);
     for (var i = 0; i < levels; i ++) {
         // Check that each output element is less than the base
         leq[i] = LessThan(3);
@@ -256,9 +256,9 @@ template QuinGeneratePathIndices(levels) {
         leq[i].out === 1;
 
         // Re-compute the total sum
-        sum += out[i] * BASE ** i;
+        sum.nums[i] <== out[i] * (BASE ** i);
     }
     
     // Check that the total sum matches the index
-    sum === in;
+    sum.sum === in;
 }

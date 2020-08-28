@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - 11
+
+install:
+  - npm i
+  - npm run bootstrap
+  - npm run build

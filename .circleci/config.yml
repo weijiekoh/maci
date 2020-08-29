@@ -68,11 +68,11 @@ jobs:
       # run trusted setups
       - run:
           name: Build the batch update state tree snark
-          command: cd circuits && npm run buildBatchUpdateStateTreeSnark
+          command: cd circuits && NODE_OPTIONS=--max-old-space-size=8192 node build/buildSnarks.js -i circom/prod/batchUpdateStateTreeVerifier.circom -j build/batchUstCircuit.json -p build/batchUstPk.json -v build/batchUstVk.json -s build/BatchUpdateStateTreeVerifier.sol -vs BatchUpdateStateTreeVerifier -m build/batchUst.params && ./scripts/buildBatchUpdateStateTreeSnark.sh
 
       - run:
           name: Build the quad vote tally snark
-          command: cd circuits && npm run buildQuadVoteTallySnark
+          command: cd circuits && NODE_OPTIONS=--max-old-space-size=8192 node build/buildSnarks.js -i circom/prod/quadVoteTally.circom -j build/qvtCircuit.json -p build/qvtPk.bin -v build/qvtVk.json -s build/QuadVoteTallyVerifier.sol -vs QuadVoteTallyVerifier -m build/qvt.params && ./scripts/buildQuadVoteTallySnark.sh
 
       # cache generated snark circuit and keys
       - save_cache:
